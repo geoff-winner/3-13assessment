@@ -4,11 +4,17 @@
     {
         function countWords($input1, $input2)
         {
-            if(in_array($input1, $input2)){
-              return strlen($input1);
-            }
+        $count = substr_count($input2, $input1);
+            return $count;
         }
 
     }
+    {
+        function countWords($input1, $input2)
+        {
+        $count = substr_count($input2, $input1);
+            return $count;
+        }
 
+    }
 ?>
