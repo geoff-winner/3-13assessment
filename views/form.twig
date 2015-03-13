@@ -1,14 +1,26 @@
 <html>
     <head>
-        <title>My Project</title>
+        <title>Word Counter</title>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
         <link rel='stylesheet' href='css/styles.css'>
     </head>
     <body>
+      <center>
         <div class='container'>
             <h1>Word Counter</h1>
             <h3>Go ahead and enter a word and a sentence or even a paragraph. You will be able to see how many times the word you chose appears within the sentence/paragraph.</h3>
-          
         </div>
+          <form action='/results' method='post'>
+            <label for='input1'>Word you wish to check for:</label>
+            <input id='input1' name='input1' type='text' required>
+
+            <label for='input2' method='post'>Sentence/Paragraph you wish to check:</label>
+            <input id='input2' name='input2' type='text' required>
+        <div>
+          <button type='submit' class='btn btn-danger'>Check Your Repeats</button>
+        </div>
+          </form>
+        </div>
+      </center>
     </body>
 </html>

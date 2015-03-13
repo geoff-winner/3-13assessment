@@ -11,10 +11,12 @@
     ));
 
     $app->get('/', function() use ($app) {
-        return $app['twig']->render('template.twig');
+        return $app['twig']->render('form.twig');
     });
 
-    $app->post('/form', function() use ($app) {
+    $app->post('/results', function() use ($app) {
+      $new_count = new WordCount;
+      $count = $new_count->countWords($_POST['count']);
       return $app['twig']->render('results.twig');
 
     });
