@@ -1,0 +1,13 @@
+Assessment 2 specs
+
+1. Inputting a single letter and outputting a count of 1 for that single letter.
+
+2. Inputting two letters of the same letters and outputting a count for those 2 letters.
+
+3. Inputting two different letters and getting a count for those two letters.
+
+4. Inputting three of the same letters and getting a count of those.
+
+5. Inputting a combination of three different letters and getting a count for those.
+
+6. Inputting words and getting a count for those.
