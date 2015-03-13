@@ -48,6 +48,36 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+        function test_WordCount3()
+        {
+            //Arrange
+            $test_WordCount = new WordCount;
+            $input1 = "aaa";
+            $input2 = "aaa";
+
+
+
+            //Act
+            $result = $test_WordCount->countWords($input1, $input2);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+        function test_WordCount4()
+        {
+            //Arrange
+            $test_WordCount = new WordCount;
+            $input1 = "aaa";
+            $input2 = "aaa cat aaa";
+
+
+
+            //Act
+            $result = $test_WordCount->countWords($input1, $input2);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
     }
 
 ?>
