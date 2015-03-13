@@ -1,19 +1,22 @@
 <?php
 
-    require_once "src/MyProjectClass.php";
+    require_once "src/WordCount.php";
 
-    class MyProjectClassTest extends PHPUnit_Framework_TestCase
+    class WordCountTest extends PHPUnit_Framework_TestCase
     {
-        function test_myFunction_firstTest()
+        function test_countWord()
         {
             //Arrange
-            $test_MyProjectClass = new MyProjectClass;
+            $test_input = new WordCountTest;
+            $input1 = array("a");
+            $input2 = array("a");
+
 
             //Act
-            $result = $test_MyProjectClass->myFunction();
+            $result = $test_input->countWord($input1);
 
             //Assert
-            $this->assertEquals( /* expectation */, $result);
+            $this->assertEquals(1, $result);
         }
     }
 
