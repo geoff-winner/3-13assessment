@@ -14,6 +14,11 @@
         return $app['twig']->render('template.twig');
     });
 
+    $app->post('/form', function() use ($app) {
+      return $app['twig']->render('results.twig');
+
+    });
+
     return $app;
 
 ?>

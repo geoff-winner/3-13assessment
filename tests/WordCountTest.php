@@ -67,8 +67,23 @@
         {
             //Arrange
             $test_WordCount = new WordCount;
-            $input1 = "aaa";
-            $input2 = "aaa cat aaa";
+            $input1 = "abc";
+            $input2 = "abc cat abc";
+
+
+
+            //Act
+            $result = $test_WordCount->countWords($input1, $input2);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
+        function test_WordCount5()
+        {
+            //Arrange
+            $test_WordCount = new WordCount;
+            $input1 = "kitty";
+            $input2 = "kitty eats kitty";
 
 
 
