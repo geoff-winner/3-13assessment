@@ -17,20 +17,33 @@
             //Assert
             $this->assertEquals(1, $result);
         }
-
-        function test_WordCount()
+        function test_WordCount1()
         {
             //Arrange
             $test_WordCount = new WordCount;
-            $input1 = "a";
-            $input2 = array("a");
+            $input1 = "aa";
+            $input2 = array("aa");
 
 
             //Act
             $result = $test_WordCount->countWords($input1, $input2);
 
             //Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals(2, $result);
+        }
+        function test_WordCount1()
+        {
+            //Arrange
+            $test_WordCount = new WordCount;
+            $input1 = "aa";
+            $input2 = array("aa");
+
+
+            //Act
+            $result = $test_WordCount->countWords($input1, $input2);
+
+            //Assert
+            $this->assertEquals(2, $result);
         }
     }
 
